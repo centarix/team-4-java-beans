@@ -10,6 +10,7 @@ The UI is implemented using springshell in LevelUpGame.java. See https://docs.sp
 
 To run, 'make build', then 'make run'. LevelUpMain contains the main method for the application. LevelUpGame contains the commands and routing. GameController is the domaincontroller.
 
-Ken was here
 
+Ken was here
+Chenna was here
 Ashmin was here
