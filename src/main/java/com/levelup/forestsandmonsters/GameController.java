@@ -34,6 +34,7 @@ public class GameController {
     }
 
     public void startGame() {
+        return;
         map = new GameMap();
         if(character == null)
         {
