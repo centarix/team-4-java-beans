@@ -57,6 +57,8 @@ public class GameController {
         character.move(directionToMove);
         this.status.currentPosition = character.getPosition().coordinates;
         this.status.moveCount = character.getMoveCount();
+        System.out.println( character.getName() +", your  current Posion :("
+        +character.currentPosition.coordinates.getX()+","+character.currentPosition.coordinates.getY()+")");
     }
 
     //Exists for testability. Is not a system operation.
