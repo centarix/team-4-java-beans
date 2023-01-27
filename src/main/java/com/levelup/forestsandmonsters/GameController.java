@@ -23,7 +23,6 @@ public class GameController {
         status = new GameStatus();
     }
 
-    // TODO: Ensure this AND CLI commands match domain model
     public static enum DIRECTION {
         NORTH, SOUTH, EAST, WEST
     }
@@ -57,8 +56,12 @@ public class GameController {
         character.move(directionToMove);
         this.status.currentPosition = character.getPosition().coordinates;
         this.status.moveCount = character.getMoveCount();
+
         System.out.println( character.getName() +", your  current Posion :("
         +character.currentPosition.coordinates.getX()+","+character.currentPosition.coordinates.getY()+")");
+
+        System.out.println("Character moves " + directionToMove);
+
     }
 
     //Exists for testability. Is not a system operation.

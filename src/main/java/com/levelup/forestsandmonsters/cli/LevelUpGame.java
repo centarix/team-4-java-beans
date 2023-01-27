@@ -83,10 +83,27 @@ public class LevelUpGame implements Quit.Command {
 
   private void printSummary() {
     System.out.println("Exiting the mysterious land!");
-    for (GameStatus status : gameHistory) {
-      // TODO: Override toString on game status to print pretty
-      System.out.println(status);
-    }
+    int startX, startY, endX, endY;
+    int totalNumberOfMoves = 0;
+    //for (GameStatus status : gameHistory) {
+    //  startX = status.currentPosition.getX();
+    //  startY = status.currentPosition.getY();
+    startX = (int) gameHistory.get(0).currentPosition.x;
+    startY = (int) gameHistory.get(0).currentPosition.y;
+
+    String Charactername = gameHistory.get(0).characterName;
+
+    endY = (int) gameHistory.get(gameHistory.size() - 1).currentPosition.y;
+    endX = (int) gameHistory.get(gameHistory.size() - 1).currentPosition.x;
+
+    totalNumberOfMoves = gameHistory.get(gameHistory.size() - 1).moveCount;
+      System.out.println("Congratulations " + Charactername + "!");
+      //System.out.println("You have made your way past the mysterious forest moving " + status.moveCount + " times.");
+      System.out.println("Starting Position: (" + startX + ", " + startY + ")"); //(3,9)
+      System.out.println("Ending Position: (" + endX + ", " + endY + ")"); 
+      System.out.println("Total number of moves: " + totalNumberOfMoves);
+      //System.out.println("Ending Position: (" + status.currentPosition.x + "," + status.currentPosition.y + ")");
+    //}
     // TODO: Print anything else you committed to in your mockup
   }
 

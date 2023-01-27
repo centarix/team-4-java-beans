@@ -1,5 +1,5 @@
 Feature: ForestsAndMonsters
-![Gamer](images/gamerErin.png)
+![Gamer](images/javabeans.jpeg)
 
 I want to create a new custom character, setting only their name.
 This split is VERY simple, to get us started. Just barebones game functionality.
